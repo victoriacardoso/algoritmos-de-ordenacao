@@ -1,4 +1,5 @@
 import algorithms.BubbleSort;
+import algorithms.InsertionSort;
 
 public class Main {
     public static void main(String[] args) {
@@ -17,5 +18,13 @@ public class Main {
         for (int i : bubbleSort.sort(vet)) {
             System.out.print(i + " ");
         }
+
+        InsertionSort insertionSort = new InsertionSort();
+       
+        System.out.println("\nSorted Array:");
+        for (int i :  insertionSort.sort(vet)) {
+            System.out.print(i + " ");
+        }
+
     }
 }
